@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #FFF; /* White text */
+}
+
+header {
+    background-color: #000; /* Black background */
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1); /* Lighter box-shadow */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo {
+    width: 80px; /* Adjust as needed */
+}
+
+#title-section h1, #title-section h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #FFF; /* White text */
+}
+
+#title-section h2 {
+    font-size: 1.2em;
+}
+
+#burger-menu {
+    cursor: pointer;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    color: #FFF; /* White text */
+}
+
+#side-menu {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333; /* Dark background for menu */
+    box-shadow: -5px 0 5px rgba(255,255,255,0.5); /* Lighter box-shadow */
+    transition: right 0.3s;
+}
+
+#side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#side-menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+::selection {
+    background: #FFF; /* White background */
+    color: #000; /* Black text */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333; /* Dark background */
+    color: white;
+}
+
+.footer-left a, .footer-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-right img {
+    width: 50px; /* Adjust as needed */
+}
+
+#instagram-link {
+    color: red;
+}
+
+main {
+    padding-top: 80px; /* Adjust based on header size */
+}
